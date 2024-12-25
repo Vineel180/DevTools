@@ -3,6 +3,7 @@ v.setAndPrintSpecialTerminalTitle("str, get char.index in str")
 
 while True:
     userInput = input("String: ")
+    lenOfUserInput = len(userInput)
     start = -1
     end = 0
     for i in userInput:
@@ -10,7 +11,7 @@ while True:
         end -= 1
         v.printSpecial(i, v.Red+v.Bold, "")
         print(" | ", end="")
-        v.printSpecial(start, v.Green+v.Bold, "")
+        v.printSpecial(v.getSameLengthNumber_instanceIterator(start, lenOfUserInput, " ", False), v.Green+v.Bold, "")
         print(" | ", end="")
-        v.printSpecial(end, v.Blue+v.Bold)
+        v.printSpecial(v.getSameLengthNumber_instanceIterator(end, lenOfUserInput, " ", False), v.Blue+v.Bold)
     print()

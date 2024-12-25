@@ -1,5 +1,5 @@
 import vinTerminalFormatting as v
-v.setAndPrintSpecialTerminalTitle("str, Compare sorted strings")
+v.setAndPrintSpecialTerminalTitle("str, Compare strings")
 
 while True:
     str1 = v.inputSpecial("1: ", "", v.Blue)
